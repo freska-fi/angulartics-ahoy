@@ -1,0 +1,15 @@
+{
+  "name": "angulartics-ahoy",
+  "main": "lib/angulartics-ahoy.js",
+  "dependencies": {
+    "angulartics": "^1.0.3",
+    "ahoy": "*"
+  },
+  "ignore": [
+    "**/.*",
+    "bower_components",
+    "node_modules",
+    "package.json",
+    "lib/index.js"
+  ]
+}

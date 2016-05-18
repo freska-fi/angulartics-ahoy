@@ -1,0 +1,33 @@
+{
+  "name": "angulartics-ahoy",
+  "version": "0.0.1",
+  "description": "Ahoy plugin for Angulartics",
+  "main": "./lib/angulartics-ahoy.js",
+  "scripts": {
+    "clean": "rm -rf dist",
+    "prebuild": "npm run clean",
+    "build": "mkdir -p dist && uglifyjs lib/angulartics-ahoy.js --compress --source-map dist/angulartics-ahoy.min.js.map --source-map-root .. --source-map-url ../dist/angulartics-ahoy.min.js.map -o dist/angulartics-ahoy.min.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/freska-fi/angulartics-ahoy"
+  },
+  "bugs": {
+    "url": "https://github.com/freska-fi/angulartics-ahoy/issues"
+  },
+  "keywords": [
+    "angularjs",
+    "angulartics",
+    "angulartics-plugin",
+    "analytics",
+    "ahoy"
+  ],
+  "author": "Esa Vuolas <esa.vuolas@freska.fi>",
+  "license": "MIT",
+  "devDependencies": {
+    "uglify-js": "^2.6.2"
+  },
+  "dependencies": {
+    "angulartics": "^1.0.3"
+  }
+}
